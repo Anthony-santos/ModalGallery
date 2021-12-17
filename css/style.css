@@ -1,0 +1,107 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+    margin: 32px;
+}
+
+.card-img{
+    height: 100%;
+    cursor: pointer;
+    align-items: center;
+
+    transition: all linear 250ms;
+}
+
+.card-img:hover{
+    transform: scale(1.1);
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .75);
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.modal-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#modal-img{
+    width: 65vw;
+}
+#btn-close{    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 32px;
+    cursor: pointer;
+
+    transition-duration: 200ms;
+}
+
+#btn-close:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#btn-right{
+    position: absolute;
+    top: 50vh;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 32px;
+    cursor: pointer;
+
+    transition-duration: 200ms;
+    
+    background-color: rgba(255, 255, 255, .3);
+}
+#btn-right:hover{
+    background-color: rgba(255, 255, 255, .5);
+}
+#btn-left{
+    position: absolute;
+    top: 50vh;
+    left: 10px;
+    color: white;
+    font-size: 30px;
+    padding: 8px;
+    border-radius: 32px;
+    cursor: pointer;
+
+    transition-duration: 200ms;
+    
+    background-color: rgba(255, 255, 255, .3);
+}
+#btn-left:hover{
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.modal-visible{
+    visibility: visible;
+    transform: scale(1);
+}
